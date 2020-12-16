@@ -1,678 +1,680 @@
 {
-    "build_url": "https://github.com/gagekmoreno/Wisconsin-SARS-CoV-2_Nextstrain",
-    "colorings": [
-      {
-        "key": "clade_membership",
-        "title": "Clade",
-        "type": "categorical"
-      },
-      {
-        "key": "num_date",
-        "title": "Sampling date",
-        "type": "continuous"
-      },
-      {
-        "key": "gt",
-        "title": "Genotype",
-        "type": "categorical"
-      },
-      {
-        "key": "location",
-        "title": "Location",
-        "type": "categorical"
-      },
-      {
-        "key": "division",
-        "title": "Admin Division",
-        "type": "categorical"
-      },
-      {
-        "key": "country",
-        "title": "Country",
-        "type": "categorical",
-        "scale": []
-      },
-      {
-        "key": "region",
-        "scale": [
-          [
-            "North America",
-            "#DC2F24"
-          ]
-        ],
-        "title": "Region",
-        "type": "categorical"
-      },
-      {
-        "key": "host",
-        "title": "Host",
-        "type": "categorical"
-      },
-      {
-        "key": "age",
-        "scale": [
-          [
-            "0 - 17",
-            "#FCF5A8"
+    "meta": {
+      "build_url": "https://github.com/gagekmoreno/Wisconsin-SARS-CoV-2_Nextstrain",
+      "colorings": [
+        {
+          "key": "clade_membership",
+          "title": "Clade",
+          "type": "categorical"
+        },
+        {
+          "key": "num_date",
+          "title": "Sampling date",
+          "type": "continuous"
+        },
+        {
+          "key": "gt",
+          "title": "Genotype",
+          "type": "categorical"
+        },
+        {
+          "key": "location",
+          "title": "Location",
+          "type": "categorical"
+        },
+        {
+          "key": "division",
+          "title": "Admin Division",
+          "type": "categorical"
+        },
+        {
+          "key": "country",
+          "title": "Country",
+          "type": "categorical",
+          "scale": []
+        },
+        {
+          "key": "region",
+          "scale": [
+            [
+              "North America",
+              "#DC2F24"
+            ]
           ],
-          [
-            "17 - 23",
-            "#FFD285"
+          "title": "Region",
+          "type": "categorical"
+        },
+        {
+          "key": "host",
+          "title": "Host",
+          "type": "categorical"
+        },
+        {
+          "key": "age",
+          "scale": [
+            [
+              "0 - 17",
+              "#FCF5A8"
+            ],
+            [
+              "17 - 23",
+              "#FFD285"
+            ],
+            [
+              "23 - 30",
+              "#F8A280"
+            ],
+            [
+              "30 - 40",
+              "#F37B8A"
+            ],
+            [
+              "40 - 50",
+              "#CB5E99"
+            ],
+            [
+              "50 - 60",
+              "#8C52A1"
+            ],
+            [
+              "60 - 70",
+              "#034F9F"
+            ],
+            [
+              "70 - 80",
+              "#04779F"
+            ],
+            [
+              "80+",
+              "#009A9E"
+            ]
           ],
-          [
-            "23 - 30",
-            "#F8A280"
+          "title": "Age",
+          "type": "continuous"
+        },
+        {
+          "key": "sex",
+          "title": "Sex",
+          "type": "categorical"
+        },
+        {
+          "key": "author",
+          "title": "Authors",
+          "type": "categorical"
+        },
+        {
+          "key": "originating_lab",
+          "title": "Originating Lab",
+          "type": "categorical"
+        },
+        {
+          "key": "submitting_lab",
+          "title": "Submitting Lab",
+          "type": "categorical"
+        },
+        {
+          "key": "recency",
+          "title": "Submission Date",
+          "type": "categorical"
+        },
+        {
+          "key": "country_exposure",
+          "title": "Country of exposure",
+          "type": "categorical"
+        },
+        {
+          "key": "division_exposure",
+          "title": "Division of exposure",
+          "type": "categorical"
+        },
+        {
+          "key": "region_exposure",
+          "title": "Region of exposure",
+          "type": "categorical"
+        },
+        {
+          "key": "campus",
+          "scale": [
+            [
+              "UW-Madison",
+              "#c5050c"
+            ],
+            [
+              "Marquette",
+              "#003366"
+            ],
+            [
+              "UW-Milwaukee",
+              "#FFBD00"
+            ]
           ],
-          [
-            "30 - 40",
-            "#F37B8A"
+          "title": "Campus",
+          "type": "categorical"
+        },
+        {
+          "key": "dorm",
+          "scale": [
+            [
+              "Witte",
+              "#00798C"
+            ],
+            [
+              "Sellery",
+              "#9DCE5C"
+            ]
           ],
-          [
-            "40 - 50",
-            "#CB5E99"
-          ],
-          [
-            "50 - 60",
-            "#8C52A1"
-          ],
-          [
-            "60 - 70",
-            "#034F9F"
-          ],
-          [
-            "70 - 80",
-            "#04779F"
-          ],
-          [
-            "80+",
-            "#009A9E"
-          ]
-        ],
-        "title": "Age",
-        "type": "continuous"
+          "title": "Dorm",
+          "type": "categorical"
+        },
+        {
+          "key": "CycleThresh",
+          "title": "Cycle threshold",
+          "type": "categorical"
+        },
+        {
+          "key": "Ethnicity",
+          "title": "Ethnicity",
+          "type": "categorical"
+        },
+        {
+          "key": "Race",
+          "title": "Race",
+          "type": "categorical"
+        },
+        {
+          "key": "legacy_clade_membership",
+          "title": "legacy_clade_membership",
+          "type": "categorical"
+        },
+        {
+          "key": "subclade_membership",
+          "title": "subclade_membership",
+          "type": "categorical"
+        },
+        {
+          "key": "recency",
+          "title": "Submission Date",
+          "type": "categorical"
+        }
+      ],
+      "description": "## Overview \nThis build serves to represent all sequences that our lab has generated, as well as sequences from around the state of Wisconsin. \n\nThis build directory contains 5 unique builds:\n\n* ncov/wisconsin/global-context\n    \n    This build serves to represent all WI sequences and to pull in sequences from around the globe to contextualize our findings. \n* ncov/wisconsin/statewide\n\n    This build serves to represent all WI sequences on their own so we can see the relationship between counties.\n* ncov/wisconsin/dane-county\n\n    This build serves to represent all Dane County sequences - where the University of Wisconsin - Madison is located. The vast majority of sequences that we generate are from Dane County. \n* ncov/wisconsin/milwaukee-county\n\n    This build serves to represent all Milwaukee County sequences. This county is the largest and most populous in Wiscosin. \n* ncov/wisconsin/avrl\n\n    This build serves to represent only the sequences that we have generated at AVRL.\n\n\n\n\n## Acknowledgments\n[Gage Moreno](https://twitter.com/GageKMoreno) and [Kat Braun](https://twitter.com/KATarinambraun) performed viral RNA extractions, sample preparation for sequencing, performing and interpreting the phylogenetic analysis, and keeping our OpenResearch Portal up to date. David Baker manages our ARTIC pipeline. JJ Baczenas manages file organization and uploaded sequences to GISAID. [Gage Moreno](https://twitter.com/GageKMoreno), [Kat Braun](https://twitter.com/KATarinambraun), [Dave O\u2019Connor](https://twitter.com/dho), and [Thomas Friedrich](https://twitter.com/tcfriedrich) maintain this Wisconsin build.\n\nWe gratefully acknowledge Dr. Trevor Bedford and the entire Nextstrain team for making Nextstrain phylogenetic tools publicly available and for their commitment to tracking the global spread of SARS-CoV-2. We also acknowledge the GISAID team for maintaining the largest public repository of SARS-CoV-2 sequence- and metadata. This project was funded in part through a COVID-19 Response grant from the Wisconsin Partnership Program at the University of Wisconsin School of Medicine and Public Health to TCF and DHO.",
+      "display_defaults": {
+        "branch_label": "none",
+        "color_by": "division",
+        "distance_measure": "num_date",
+        "geo_resolution": "division",
+        "map_triplicate": true
       },
-      {
-        "key": "sex",
-        "title": "Sex",
-        "type": "categorical"
+      "filters": [
+        "recency",
+        "location",
+        "division",
+        "country",
+        "region",
+        "host",
+        "author",
+        "campus",
+        "dorm"
+      ],
+      "genome_annotations": {
+        "E": {
+          "end": 26472,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 26245,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "M": {
+          "end": 27191,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 26523,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "N": {
+          "end": 29533,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 28274,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF10": {
+          "end": 29674,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 29558,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF14": {
+          "end": 28955,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 28734,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF1a": {
+          "end": 13468,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 266,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF1b": {
+          "end": 21555,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 13468,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF3a": {
+          "end": 26220,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 25393,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF6": {
+          "end": 27387,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 27202,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF7a": {
+          "end": 27759,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 27394,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF7b": {
+          "end": 27887,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 27756,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF8": {
+          "end": 28259,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 27894,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "ORF9b": {
+          "end": 28577,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 28284,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "S": {
+          "end": 25384,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 21563,
+          "strand": "+",
+          "type": "CDS"
+        },
+        "nuc": {
+          "end": 29903,
+          "seqid": "defaults/reference_seq.gb",
+          "start": 1,
+          "strand": "+",
+          "type": "source"
+        }
       },
-      {
-        "key": "author",
-        "title": "Authors",
-        "type": "categorical"
-      },
-      {
-        "key": "originating_lab",
-        "title": "Originating Lab",
-        "type": "categorical"
-      },
-      {
-        "key": "submitting_lab",
-        "title": "Submitting Lab",
-        "type": "categorical"
-      },
-      {
-        "key": "recency",
-        "title": "Submission Date",
-        "type": "categorical"
-      },
-      {
-        "key": "country_exposure",
-        "title": "Country of exposure",
-        "type": "categorical"
-      },
-      {
-        "key": "division_exposure",
-        "title": "Division of exposure",
-        "type": "categorical"
-      },
-      {
-        "key": "region_exposure",
-        "title": "Region of exposure",
-        "type": "categorical"
-      },
-      {
-        "key": "campus",
-        "scale": [
-          [
-            "UW-Madison",
-            "#c5050c"
-          ],
-          [
-            "Marquette",
-            "#003366"
-          ],
-          [
-            "UW-Milwaukee",
-            "#FFBD00"
-          ]
-        ],
-        "title": "Campus",
-        "type": "categorical"
-      },
-      {
-        "key": "dorm",
-        "scale": [
-          [
-            "Witte",
-            "#00798C"
-          ],
-          [
-            "Sellery",
-            "#9DCE5C"
-          ]
-        ],
-        "title": "Dorm",
-        "type": "categorical"
-      },
-      {
-        "key": "CycleThresh",
-        "title": "Cycle threshold",
-        "type": "categorical"
-      },
-      {
-        "key": "Ethnicity",
-        "title": "Ethnicity",
-        "type": "categorical"
-      },
-      {
-        "key": "Race",
-        "title": "Race",
-        "type": "categorical"
-      },
-      {
-        "key": "legacy_clade_membership",
-        "title": "legacy_clade_membership",
-        "type": "categorical"
-      },
-      {
-        "key": "subclade_membership",
-        "title": "subclade_membership",
-        "type": "categorical"
-      },
-      {
-        "key": "recency",
-        "title": "Submission Date",
-        "type": "categorical"
-      }
-    ],
-    "description": "## Overview \nThis build serves to represent all sequences that our lab has generated, as well as sequences from around the state of Wisconsin. \n\nThis build directory contains 5 unique builds:\n\n* ncov/wisconsin/global-context\n    \n    This build serves to represent all WI sequences and to pull in sequences from around the globe to contextualize our findings. \n* ncov/wisconsin/statewide\n\n    This build serves to represent all WI sequences on their own so we can see the relationship between counties.\n* ncov/wisconsin/dane-county\n\n    This build serves to represent all Dane County sequences - where the University of Wisconsin - Madison is located. The vast majority of sequences that we generate are from Dane County. \n* ncov/wisconsin/milwaukee-county\n\n    This build serves to represent all Milwaukee County sequences. This county is the largest and most populous in Wiscosin. \n* ncov/wisconsin/avrl\n\n    This build serves to represent only the sequences that we have generated at AVRL.\n\n\n\n\n## Acknowledgments\n[Gage Moreno](https://twitter.com/GageKMoreno) and [Kat Braun](https://twitter.com/KATarinambraun) performed viral RNA extractions, sample preparation for sequencing, performing and interpreting the phylogenetic analysis, and keeping our OpenResearch Portal up to date. David Baker manages our ARTIC pipeline. JJ Baczenas manages file organization and uploaded sequences to GISAID. [Gage Moreno](https://twitter.com/GageKMoreno), [Kat Braun](https://twitter.com/KATarinambraun), [Dave O\u2019Connor](https://twitter.com/dho), and [Thomas Friedrich](https://twitter.com/tcfriedrich) maintain this Wisconsin build.\n\nWe gratefully acknowledge Dr. Trevor Bedford and the entire Nextstrain team for making Nextstrain phylogenetic tools publicly available and for their commitment to tracking the global spread of SARS-CoV-2. We also acknowledge the GISAID team for maintaining the largest public repository of SARS-CoV-2 sequence- and metadata. This project was funded in part through a COVID-19 Response grant from the Wisconsin Partnership Program at the University of Wisconsin School of Medicine and Public Health to TCF and DHO.",
-    "display_defaults": {
-      "branch_label": "none",
-      "color_by": "division",
-      "distance_measure": "num_date",
-      "geo_resolution": "division",
-      "map_triplicate": true
+      "geo_resolutions": [
+        {
+          "demes": {
+            "Adams County WI": {
+              "latitude": 43.97354,
+              "longitude": -89.755486
+            },
+            "Brooklyn WI": {
+              "latitude": 42.854602,
+              "longitude": -89.371662
+            },
+            "Brown County WI": {
+              "latitude": 44.4383498,
+              "longitude": -88.0167093
+            },
+            "Campbellsport": {
+              "latitude": 43.596732,
+              "longitude": -88.280763
+            },
+            "Colorado Springs": {
+              "latitude": 38.8339,
+              "longitude": -104.8214
+            },
+            "Columbia County": {
+              "latitude": 45.956622,
+              "longitude": -123.082332
+            },
+            "Columbia County WI": {
+              "latitude": 43.461844,
+              "longitude": -89.293554
+            },
+            "Columbus WI": {
+              "latitude": 43.337556,
+              "longitude": -89.023979
+            },
+            "Cook County": {
+              "latitude": 41.8197385,
+              "longitude": -87.756525
+            },
+            "Crawford County": {
+              "latitude": 42.0347,
+              "longitude": -95.3103
+            },
+            "Dane County": {
+              "latitude": 43.0186,
+              "longitude": -89.5498
+            },
+            "Denver County": {
+              "latitude": 39.7348381,
+              "longitude": -104.9653271
+            },
+            "Dodge County": {
+              "latitude": 43.413614,
+              "longitude": -88.7177834
+            },
+            "Door County": {
+              "latitude": 44.7615925,
+              "longitude": -87.5329747
+            },
+            "Fairfield County CT": {
+              "latitude": 41.2943069,
+              "longitude": -73.37486
+            },
+            "Fond Du Lac County": {
+              "latitude": 43.739156,
+              "longitude": -88.479198
+            },
+            "Grant County WI": {
+              "latitude": 42.888151,
+              "longitude": -90.703612
+            },
+            "Green County": {
+              "latitude": 42.687601,
+              "longitude": -89.584475
+            },
+            "Houston County": {
+              "latitude": 43.676439,
+              "longitude": -91.493283
+            },
+            "Jackson County IA": {
+              "latitude": 42.195909,
+              "longitude": -90.570525
+            },
+            "Jackson County WI": {
+              "latitude": 44.312857,
+              "longitude": -90.780626
+            },
+            "Jefferson County WI": {
+              "latitude": 43.025978,
+              "longitude": -88.773336
+            },
+            "Juneau County": {
+              "latitude": 43.8673,
+              "longitude": -90.0747
+            },
+            "La Crosse County": {
+              "latitude": 43.8617,
+              "longitude": -91.1353
+            },
+            "Lafayette County": {
+              "latitude": 42.662913,
+              "longitude": -90.134986
+            },
+            "Los Angeles County": {
+              "latitude": 34.029267,
+              "longitude": -118.242865
+            },
+            "Maricopa County": {
+              "latitude": 33.34883,
+              "longitude": -112.49123
+            },
+            "Marin County": {
+              "latitude": 38.077277,
+              "longitude": -122.71906
+            },
+            "Middlesex County": {
+              "latitude": 42.485452,
+              "longitude": -71.3968261
+            },
+            "Milwaukee County": {
+              "latitude": 43.008019,
+              "longitude": -87.937899
+            },
+            "Monroe County": {
+              "latitude": 43.940837,
+              "longitude": -90.605424
+            },
+            "Nassau County": {
+              "latitude": 40.7333,
+              "longitude": -73.5801
+            },
+            "Norfolk County": {
+              "latitude": 42.1538607,
+              "longitude": -71.1828015
+            },
+            "Onondaga County": {
+              "latitude": 43.0268,
+              "longitude": -76.1784
+            },
+            "Outagamie County": {
+              "latitude": 44.41603,
+              "longitude": -88.4602005
+            },
+            "Ozaukee County": {
+              "latitude": 43.407672,
+              "longitude": -87.926654
+            },
+            "Palm Beach County": {
+              "latitude": 26.6279798,
+              "longitude": -80.4494174
+            },
+            "Port Washington": {
+              "latitude": 43.382722,
+              "longitude": -87.885911
+            },
+            "Putnam County": {
+              "latitude": 41.424102,
+              "longitude": -73.753622
+            },
+            "Richland County WI": {
+              "latitude": 43.406,
+              "longitude": -90.3748
+            },
+            "Rock County": {
+              "latitude": 42.654281,
+              "longitude": -89.079857
+            },
+            "Saint Louis County": {
+              "latitude": 38.63298,
+              "longitude": -90.472478
+            },
+            "San Diego County": {
+              "latitude": 32.981125,
+              "longitude": -116.681405
+            },
+            "Santa Clara County": {
+              "latitude": 37.236094,
+              "longitude": -121.683399
+            },
+            "Sauk County": {
+              "latitude": 43.4401728,
+              "longitude": -89.9653841
+            },
+            "Sheboygan County": {
+              "latitude": 43.7128967,
+              "longitude": -87.9370433
+            },
+            "South Milwaukee": {
+              "latitude": 42.908266,
+              "longitude": -87.860903
+            },
+            "Trempealeau County": {
+              "latitude": 44.2398,
+              "longitude": -91.3662
+            },
+            "Vernon County": {
+              "latitude": 43.5577,
+              "longitude": -90.8294
+            },
+            "Verona WI": {
+              "latitude": 42.987161,
+              "longitude": -89.53538
+            },
+            "Washington County WI": {
+              "latitude": 43.362309,
+              "longitude": -88.235107
+            },
+            "Waukesha County": {
+              "latitude": 43.000286,
+              "longitude": -88.237059
+            },
+            "Waupaca County": {
+              "latitude": 44.4927889,
+              "longitude": -88.9650419
+            },
+            "Westchester County": {
+              "latitude": 41.122,
+              "longitude": -73.7949
+            },
+            "Whitefish Bay": {
+              "latitude": 43.111041,
+              "longitude": -87.901408
+            },
+            "Winnebago County IL": {
+              "latitude": 42.3255276,
+              "longitude": -89.1496574
+            },
+            "Winnebago County WI": {
+              "latitude": 44.0697014,
+              "longitude": -88.6516527
+            }
+          },
+          "key": "location"
+        },
+        {
+          "demes": {
+            "Arizona": {
+              "latitude": 34.220707,
+              "longitude": -111.657462
+            },
+            "Asia": {
+              "latitude": 30.451098,
+              "longitude": 86.654576
+            },
+            "California": {
+              "latitude": 36.357039,
+              "longitude": -119.690182
+            },
+            "Colorado": {
+              "latitude": 39.5501,
+              "longitude": -105.7821
+            },
+            "Connecticut": {
+              "latitude": 41.678117,
+              "longitude": -72.669773
+            },
+            "Florida": {
+              "latitude": 27.6648,
+              "longitude": -81.5158
+            },
+            "Illinois": {
+              "latitude": 40.088552,
+              "longitude": -89.301876
+            },
+            "Iowa": {
+              "latitude": 41.878,
+              "longitude": -93.0977
+            },
+            "Massachusetts": {
+              "latitude": 42.340741,
+              "longitude": -71.998513
+            },
+            "Minnesota": {
+              "latitude": 46.126042,
+              "longitude": -94.619581
+            },
+            "Missouri": {
+              "latitude": 37.9643,
+              "longitude": -91.8318
+            },
+            "Nebraska": {
+              "latitude": 41.4925,
+              "longitude": -99.9018
+            },
+            "Nevada": {
+              "latitude": 38.8026,
+              "longitude": -116.4194
+            },
+            "New Jersey": {
+              "latitude": 40.0583,
+              "longitude": -74.4057
+            },
+            "New York": {
+              "latitude": 40.703395,
+              "longitude": -73.904193
+            },
+            "Pennsylvania": {
+              "latitude": 41.2033,
+              "longitude": -77.1945
+            },
+            "South Dakota": {
+              "latitude": 44.6471761,
+              "longitude": -100.348761
+            },
+            "Washington DC": {
+              "latitude": 38.89565,
+              "longitude": -77.018707
+            },
+            "Wisconsin": {
+              "latitude": 44.535145,
+              "longitude": -89.527762
+            }
+          },
+          "key": "division"
+        },
+        {
+          "demes": {
+            "Asia": {
+              "latitude": 30.451098,
+              "longitude": 86.654576
+            },
+            "USA": {
+              "latitude": 39.7837304,
+              "longitude": -100.4458824
+            }
+          },
+          "key": "country"
+        },
+        {
+          "demes": {
+            "Asia": {
+              "latitude": 30.451098,
+              "longitude": 86.654576
+            },
+            "North America": {
+              "latitude": 28.2367447,
+              "longitude": -97.738017
+            }
+          },
+          "key": "region"
+        }
+      ],
+      "maintainers": [
+        {
+          "name": "Gage Moreno, Kat Braun, and AVRL et al",
+          "url": "https://openresearch.labkey.com/wiki/Coven/page.view?name=sars-cov-2-sequencing"
+        }
+      ],
+      "panels": [
+        "tree"
+      ],
+      "title": "Genomic epidemiology of novel coronavirus - Wisconsin_Statewide-focused subsampling",
+      "updated": "2020-12-09"
     },
-    "filters": [
-      "recency",
-      "location",
-      "division",
-      "country",
-      "region",
-      "host",
-      "author",
-      "campus",
-      "dorm"
-    ],
-    "genome_annotations": {
-      "E": {
-        "end": 26472,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 26245,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "M": {
-        "end": 27191,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 26523,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "N": {
-        "end": 29533,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 28274,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF10": {
-        "end": 29674,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 29558,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF14": {
-        "end": 28955,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 28734,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF1a": {
-        "end": 13468,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 266,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF1b": {
-        "end": 21555,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 13468,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF3a": {
-        "end": 26220,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 25393,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF6": {
-        "end": 27387,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 27202,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF7a": {
-        "end": 27759,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 27394,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF7b": {
-        "end": 27887,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 27756,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF8": {
-        "end": 28259,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 27894,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "ORF9b": {
-        "end": 28577,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 28284,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "S": {
-        "end": 25384,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 21563,
-        "strand": "+",
-        "type": "CDS"
-      },
-      "nuc": {
-        "end": 29903,
-        "seqid": "defaults/reference_seq.gb",
-        "start": 1,
-        "strand": "+",
-        "type": "source"
-      }
-    },
-    "geo_resolutions": [
-      {
-        "demes": {
-          "Adams County WI": {
-            "latitude": 43.97354,
-            "longitude": -89.755486
-          },
-          "Brooklyn WI": {
-            "latitude": 42.854602,
-            "longitude": -89.371662
-          },
-          "Brown County WI": {
-            "latitude": 44.4383498,
-            "longitude": -88.0167093
-          },
-          "Campbellsport": {
-            "latitude": 43.596732,
-            "longitude": -88.280763
-          },
-          "Colorado Springs": {
-            "latitude": 38.8339,
-            "longitude": -104.8214
-          },
-          "Columbia County": {
-            "latitude": 45.956622,
-            "longitude": -123.082332
-          },
-          "Columbia County WI": {
-            "latitude": 43.461844,
-            "longitude": -89.293554
-          },
-          "Columbus WI": {
-            "latitude": 43.337556,
-            "longitude": -89.023979
-          },
-          "Cook County": {
-            "latitude": 41.8197385,
-            "longitude": -87.756525
-          },
-          "Crawford County": {
-            "latitude": 42.0347,
-            "longitude": -95.3103
-          },
-          "Dane County": {
-            "latitude": 43.0186,
-            "longitude": -89.5498
-          },
-          "Denver County": {
-            "latitude": 39.7348381,
-            "longitude": -104.9653271
-          },
-          "Dodge County": {
-            "latitude": 43.413614,
-            "longitude": -88.7177834
-          },
-          "Door County": {
-            "latitude": 44.7615925,
-            "longitude": -87.5329747
-          },
-          "Fairfield County CT": {
-            "latitude": 41.2943069,
-            "longitude": -73.37486
-          },
-          "Fond Du Lac County": {
-            "latitude": 43.739156,
-            "longitude": -88.479198
-          },
-          "Grant County WI": {
-            "latitude": 42.888151,
-            "longitude": -90.703612
-          },
-          "Green County": {
-            "latitude": 42.687601,
-            "longitude": -89.584475
-          },
-          "Houston County": {
-            "latitude": 43.676439,
-            "longitude": -91.493283
-          },
-          "Jackson County IA": {
-            "latitude": 42.195909,
-            "longitude": -90.570525
-          },
-          "Jackson County WI": {
-            "latitude": 44.312857,
-            "longitude": -90.780626
-          },
-          "Jefferson County WI": {
-            "latitude": 43.025978,
-            "longitude": -88.773336
-          },
-          "Juneau County": {
-            "latitude": 43.8673,
-            "longitude": -90.0747
-          },
-          "La Crosse County": {
-            "latitude": 43.8617,
-            "longitude": -91.1353
-          },
-          "Lafayette County": {
-            "latitude": 42.662913,
-            "longitude": -90.134986
-          },
-          "Los Angeles County": {
-            "latitude": 34.029267,
-            "longitude": -118.242865
-          },
-          "Maricopa County": {
-            "latitude": 33.34883,
-            "longitude": -112.49123
-          },
-          "Marin County": {
-            "latitude": 38.077277,
-            "longitude": -122.71906
-          },
-          "Middlesex County": {
-            "latitude": 42.485452,
-            "longitude": -71.3968261
-          },
-          "Milwaukee County": {
-            "latitude": 43.008019,
-            "longitude": -87.937899
-          },
-          "Monroe County": {
-            "latitude": 43.940837,
-            "longitude": -90.605424
-          },
-          "Nassau County": {
-            "latitude": 40.7333,
-            "longitude": -73.5801
-          },
-          "Norfolk County": {
-            "latitude": 42.1538607,
-            "longitude": -71.1828015
-          },
-          "Onondaga County": {
-            "latitude": 43.0268,
-            "longitude": -76.1784
-          },
-          "Outagamie County": {
-            "latitude": 44.41603,
-            "longitude": -88.4602005
-          },
-          "Ozaukee County": {
-            "latitude": 43.407672,
-            "longitude": -87.926654
-          },
-          "Palm Beach County": {
-            "latitude": 26.6279798,
-            "longitude": -80.4494174
-          },
-          "Port Washington": {
-            "latitude": 43.382722,
-            "longitude": -87.885911
-          },
-          "Putnam County": {
-            "latitude": 41.424102,
-            "longitude": -73.753622
-          },
-          "Richland County WI": {
-            "latitude": 43.406,
-            "longitude": -90.3748
-          },
-          "Rock County": {
-            "latitude": 42.654281,
-            "longitude": -89.079857
-          },
-          "Saint Louis County": {
-            "latitude": 38.63298,
-            "longitude": -90.472478
-          },
-          "San Diego County": {
-            "latitude": 32.981125,
-            "longitude": -116.681405
-          },
-          "Santa Clara County": {
-            "latitude": 37.236094,
-            "longitude": -121.683399
-          },
-          "Sauk County": {
-            "latitude": 43.4401728,
-            "longitude": -89.9653841
-          },
-          "Sheboygan County": {
-            "latitude": 43.7128967,
-            "longitude": -87.9370433
-          },
-          "South Milwaukee": {
-            "latitude": 42.908266,
-            "longitude": -87.860903
-          },
-          "Trempealeau County": {
-            "latitude": 44.2398,
-            "longitude": -91.3662
-          },
-          "Vernon County": {
-            "latitude": 43.5577,
-            "longitude": -90.8294
-          },
-          "Verona WI": {
-            "latitude": 42.987161,
-            "longitude": -89.53538
-          },
-          "Washington County WI": {
-            "latitude": 43.362309,
-            "longitude": -88.235107
-          },
-          "Waukesha County": {
-            "latitude": 43.000286,
-            "longitude": -88.237059
-          },
-          "Waupaca County": {
-            "latitude": 44.4927889,
-            "longitude": -88.9650419
-          },
-          "Westchester County": {
-            "latitude": 41.122,
-            "longitude": -73.7949
-          },
-          "Whitefish Bay": {
-            "latitude": 43.111041,
-            "longitude": -87.901408
-          },
-          "Winnebago County IL": {
-            "latitude": 42.3255276,
-            "longitude": -89.1496574
-          },
-          "Winnebago County WI": {
-            "latitude": 44.0697014,
-            "longitude": -88.6516527
-          }
-        },
-        "key": "location"
-      },
-      {
-        "demes": {
-          "Arizona": {
-            "latitude": 34.220707,
-            "longitude": -111.657462
-          },
-          "Asia": {
-            "latitude": 30.451098,
-            "longitude": 86.654576
-          },
-          "California": {
-            "latitude": 36.357039,
-            "longitude": -119.690182
-          },
-          "Colorado": {
-            "latitude": 39.5501,
-            "longitude": -105.7821
-          },
-          "Connecticut": {
-            "latitude": 41.678117,
-            "longitude": -72.669773
-          },
-          "Florida": {
-            "latitude": 27.6648,
-            "longitude": -81.5158
-          },
-          "Illinois": {
-            "latitude": 40.088552,
-            "longitude": -89.301876
-          },
-          "Iowa": {
-            "latitude": 41.878,
-            "longitude": -93.0977
-          },
-          "Massachusetts": {
-            "latitude": 42.340741,
-            "longitude": -71.998513
-          },
-          "Minnesota": {
-            "latitude": 46.126042,
-            "longitude": -94.619581
-          },
-          "Missouri": {
-            "latitude": 37.9643,
-            "longitude": -91.8318
-          },
-          "Nebraska": {
-            "latitude": 41.4925,
-            "longitude": -99.9018
-          },
-          "Nevada": {
-            "latitude": 38.8026,
-            "longitude": -116.4194
-          },
-          "New Jersey": {
-            "latitude": 40.0583,
-            "longitude": -74.4057
-          },
-          "New York": {
-            "latitude": 40.703395,
-            "longitude": -73.904193
-          },
-          "Pennsylvania": {
-            "latitude": 41.2033,
-            "longitude": -77.1945
-          },
-          "South Dakota": {
-            "latitude": 44.6471761,
-            "longitude": -100.348761
-          },
-          "Washington DC": {
-            "latitude": 38.89565,
-            "longitude": -77.018707
-          },
-          "Wisconsin": {
-            "latitude": 44.535145,
-            "longitude": -89.527762
-          }
-        },
-        "key": "division"
-      },
-      {
-        "demes": {
-          "Asia": {
-            "latitude": 30.451098,
-            "longitude": 86.654576
-          },
-          "USA": {
-            "latitude": 39.7837304,
-            "longitude": -100.4458824
-          }
-        },
-        "key": "country"
-      },
-      {
-        "demes": {
-          "Asia": {
-            "latitude": 30.451098,
-            "longitude": 86.654576
-          },
-          "North America": {
-            "latitude": 28.2367447,
-            "longitude": -97.738017
-          }
-        },
-        "key": "region"
-      }
-    ],
-    "maintainers": [
-      {
-        "name": "Gage Moreno, Kat Braun, and AVRL et al",
-        "url": "https://openresearch.labkey.com/wiki/Coven/page.view?name=sars-cov-2-sequencing"
-      }
-    ],
-    "panels": [
-      "tree"
-    ],
-    "title": "Genomic epidemiology of novel coronavirus - Wisconsin_Statewide-focused subsampling",
-    "updated": "2020-12-09"
-  }
+}
